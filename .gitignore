@@ -3,3 +3,6 @@ venv/
 prometheus/prometheus
 prometheus/data/
 prometheus/promtool
+alert-manager/alertmanager
+alert-manager/amtool
+alert-manager/data
