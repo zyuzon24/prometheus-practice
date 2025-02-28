@@ -78,6 +78,12 @@ route:
         receiver: go-team-lead
 
 
+inhibit_rules:
+- source_match: 
+    severity: 'critical'
+  target_match:
+    serverity: 'warning'
+  equal: ['app_type', 'category']
 receivers:
 - name: admin
   email_configs:
