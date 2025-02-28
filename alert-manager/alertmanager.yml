@@ -28,9 +28,13 @@ route:
       - match:
           severity: critical
         receiver: linux-team-manager
+        continue: true                  # This will allow for the alert to traverse down the sibling paths and send alert to category cpu
       - match:
           severity: warning
         receiver: linux-team-lead
+      - match:
+          category: cpu 
+        receiver: linux-cpu-engineer
 
     # Windows team
     - match:
