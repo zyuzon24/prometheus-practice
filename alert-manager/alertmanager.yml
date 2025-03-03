@@ -118,8 +118,9 @@ receivers:
   - to: 'example@gmail.com'
 
 - name: windows-team-manager
-  email_configs:
-  - to: 'example@gmail.com'
+  slack_configs:
+    - channel: '#prometheus'
+      api_url: '' #INSERT SLACK WEBHOOK API URL HERE
 
 - name: pec-admin
   email_configs:
