@@ -6,3 +6,6 @@ prometheus/promtool
 alert-manager/alertmanager
 alert-manager/amtool
 alert-manager/data
+blackbox/blackbox_exporter
+blackbox/LICENSE
+blackbox/NOTICE
