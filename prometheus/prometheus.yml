@@ -77,3 +77,13 @@ scrape_configs:
     # honor_labels: true # Use instrumentation labels and override target labels
     static_configs:
       - targets: ["localhost:9091"]
+
+  - job_name: "ec2"
+    ec2_sd_configs:
+      - profile: prometheus
+        region: us-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_public_ip]
+        regex: '(.*)'
+        replacement: '${1}:9100'
+        target_label: __address__
