@@ -9,3 +9,4 @@ alert-manager/data
 blackbox/blackbox_exporter
 blackbox/LICENSE
 blackbox/NOTICE
+cloudwatch_exporter/cloudwatch_exporter.jar
